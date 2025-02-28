@@ -10,7 +10,7 @@ import Pomodoro from './components/pomodoro/Pomodoro.tsx'
 createRoot(document.getElementById('root')!).render(
   <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
     <StrictMode>
-      <BrowserRouter>
+      <BrowserRouter basename='/stay-locked-in/'>
         <Navbar />
         <Routes>
           <Route path='/' element={<App />} />
