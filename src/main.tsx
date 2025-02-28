@@ -5,7 +5,7 @@ import App from './App.tsx'
 import { ThemeProvider } from './components/theme-provider.tsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Navbar } from './components/navbar.tsx'
-import Pomodoro from './components/pomodoro/pomodoro.tsx'
+import Pomodoro from './components/pomodoro/Pomodoro.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">

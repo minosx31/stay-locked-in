@@ -242,15 +242,15 @@ function Pomodoro() {
     }
   }
 
-  // Calculate progress percentage
-  const getMaxTime = () => {
-    switch (activeTab) {
-      case 'pomodoro': return durations.pomodoro
-      case 'shortBreak': return durations.shortBreak
-      case 'longBreak': return durations.longBreak
-      default: return durations.pomodoro
-    }
-  }
+  // // Calculate progress percentage
+  // const getMaxTime = () => {
+  //   switch (activeTab) {
+  //     case 'pomodoro': return durations.pomodoro
+  //     case 'shortBreak': return durations.shortBreak
+  //     case 'longBreak': return durations.longBreak
+  //     default: return durations.pomodoro
+  //   }
+  // }
 
   // TASKS MANAGEMENT
   // Load tasks from localStorage on component mount
@@ -297,7 +297,7 @@ function Pomodoro() {
   }
   // END - TASKS MANAGEMENT
   
-  const progress = (time / getMaxTime()) * 100
+  // const progress = (time / getMaxTime()) * 100
 
   return (
     <div className='w-full h-full' ref={fullscreenContainerRef}>
